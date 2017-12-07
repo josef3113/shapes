@@ -33,3 +33,16 @@ ostream& operator <<(ostream &out,const Point& toprint)
 	out<<"the point is:("<<toprint.x<<","<<toprint.y<<")";
 	return out;
 }
+
+
+double distancePoint(Point A ,Point B)
+{
+
+	double s=A.getX()-B.getX();     //  (X1-X2)
+	double p=A.getY()-B.getY();     //  (Y1-Y2)
+	
+
+	
+	return sqrt(s*s + p*p);        //sqrt of (x1-x2)^2 + (y1-y2)^2 is a distance between two point
+
+}

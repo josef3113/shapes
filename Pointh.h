@@ -17,4 +17,6 @@ friend ostream& operator <<(ostream &out,const Point & toprint);
 
 };
 
+double distancePoint(Point A ,Point B);
+
 #endif

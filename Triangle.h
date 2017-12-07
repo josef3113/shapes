@@ -14,9 +14,10 @@ public:
 	~Triangle();
 
 	double getArea()const;
+	double getPerimeter()const;
 };
 
 //  escort function 
 
-double distance(Point ,Point);
+//double distance(Point ,Point);
 

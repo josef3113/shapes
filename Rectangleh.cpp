@@ -5,8 +5,8 @@ Rectangle::Rectangle(Point A,Point C )
 {
 	this->A=A;                          // A from inheritance of Polygon
 	this->C=C;                          // C from inheritance of Polygon
-	this->lenght=C.getX()-A.getX();
-	this->width=C.getY()-A.getY();
+	this->lenght=abs(C.getX()-A.getX());
+	this->width=abs(C.getY()-A.getY());
 	cout<<"Rec c"<<endl;
 
 }
@@ -26,7 +26,7 @@ Rectangle& Rectangle::setA(const Point & p)
 	return (*this);
 }
 
-Rectangle& Rectangle::setC(const Point & p)
+Rectangle& Rectangle::setC(const Point & p)    //to add the effect from this action
 {
 	this->C=p;
 	return (*this);

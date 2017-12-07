@@ -1,4 +1,5 @@
 #include "Triangle.h"
+#include "Pointh.h"
 #include <math.h>
 
 
@@ -8,9 +9,9 @@ Triangle::Triangle(Point A,Point B,Point C)
 	this->B=B;
 	this->C=C;
 
-	this->AB=distance(A,B);
-	this->BC=distance(B,C);
-	this->CA=distance(C,A);
+	this->AB=distancePoint(A,B);
+	this->BC=distancePoint(B,C);
+	this->CA=distancePoint(C,A);
 
 	cout<<"Tri co"<<endl;      //to follow after creation objeckt
 
@@ -29,17 +30,11 @@ Triangle::~Triangle(void)
 
 double Triangle::getArea()const
 {
-  return	sqrt( sqrt( (AB+BC+CA)*(AB+BC-CA)*(AB-BC+CA)*(BC+CA-AB) ) );
+	 return	 sqrt( (AB+BC+CA)*(AB+BC-CA)*(AB-BC+CA)*(BC+CA-AB)  ) / 4;
 }
 
-//escort function 
-
-double distance(Point A ,Point B)
+double Triangle::getPerimeter()const
 {
-
-	double s=A.getX()-B.getX();     //  (X1-X2)
-	double p=A.getY()-B.getY();     //  (Y1-Y2)
-
-	return sqrt(s*s + p*p);        //sqrt of (x1-x2)^2 + (y1-y2)^2 is a distance between two point
-
+	return AB+BC+CA;
 }
+

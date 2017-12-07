@@ -1,114 +1,27 @@
-﻿Build started 12/7/2017 4:16:46 PM.
+﻿Build started 12/8/2017 12:42:26 AM.
      1>Project "C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\shape\shape.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\shape.unsuccessfulbuild".
+         Creating "Debug\shape.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Triangle.cpp main.cpp
          main.cpp
          Triangle.cpp
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(373): error C2039: 'iterator_category' : is not a member of 'Point'
-                 c:\users\josef\documents\visual studio 2010\projects\gg\shape\shape\pointh.h(5) : see declaration of 'Point'
-                 c:\users\josef\documents\visual studio 2010\projects\gg\shape\shape\triangle.cpp(11) : see reference to class template instantiation 'std::iterator_traits<_Iter>' being compiled
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(373): error C2146: syntax error : missing ';' before identifier 'iterator_category'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(373): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(373): error C2602: 'std::iterator_traits<_Iter>::iterator_category' is not a member of a base class of 'std::iterator_traits<_Iter>'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(373) : see declaration of 'std::iterator_traits<_Iter>::iterator_category'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(373): error C2868: 'std::iterator_traits<_Iter>::iterator_category' : illegal syntax for using-declaration; expected qualified-name
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(374): error C2039: 'value_type' : is not a member of 'Point'
-                 c:\users\josef\documents\visual studio 2010\projects\gg\shape\shape\pointh.h(5) : see declaration of 'Point'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(374): error C2146: syntax error : missing ';' before identifier 'value_type'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(374): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(374): error C2602: 'std::iterator_traits<_Iter>::value_type' is not a member of a base class of 'std::iterator_traits<_Iter>'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(374) : see declaration of 'std::iterator_traits<_Iter>::value_type'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(374): error C2868: 'std::iterator_traits<_Iter>::value_type' : illegal syntax for using-declaration; expected qualified-name
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(375): error C2039: 'difference_type' : is not a member of 'Point'
-                 c:\users\josef\documents\visual studio 2010\projects\gg\shape\shape\pointh.h(5) : see declaration of 'Point'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(375): error C2146: syntax error : missing ';' before identifier 'difference_type'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(375): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(375): error C2602: 'std::iterator_traits<_Iter>::difference_type' is not a member of a base class of 'std::iterator_traits<_Iter>'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(375) : see declaration of 'std::iterator_traits<_Iter>::difference_type'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(375): error C2868: 'std::iterator_traits<_Iter>::difference_type' : illegal syntax for using-declaration; expected qualified-name
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(377): error C2039: 'pointer' : is not a member of 'Point'
-                 c:\users\josef\documents\visual studio 2010\projects\gg\shape\shape\pointh.h(5) : see declaration of 'Point'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(377): error C2146: syntax error : missing ';' before identifier 'pointer'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(377): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(377): error C2602: 'std::iterator_traits<_Iter>::pointer' is not a member of a base class of 'std::iterator_traits<_Iter>'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(377) : see declaration of 'std::iterator_traits<_Iter>::pointer'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(377): error C2868: 'std::iterator_traits<_Iter>::pointer' : illegal syntax for using-declaration; expected qualified-name
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(378): error C2039: 'reference' : is not a member of 'Point'
-                 c:\users\josef\documents\visual studio 2010\projects\gg\shape\shape\pointh.h(5) : see declaration of 'Point'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(378): error C2146: syntax error : missing ';' before identifier 'reference'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(378): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(378): error C2602: 'std::iterator_traits<_Iter>::reference' is not a member of a base class of 'std::iterator_traits<_Iter>'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(378) : see declaration of 'std::iterator_traits<_Iter>::reference'
-                 with
-                 [
-                     _Iter=Point
-                 ]
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(378): error C2868: 'std::iterator_traits<_Iter>::reference' : illegal syntax for using-declaration; expected qualified-name
-                 with
-                 [
-                     _Iter=Point
-                 ]
          Generating Code...
-     1>Done Building Project "C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\shape\shape.vcxproj" (build target(s)) -- FAILED.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\shape.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.lib" /MACHINE:X86 Debug\Circle.obj
+         Debug\main.obj
+         Debug\Pointh.obj
+         Debug\Rectangleh.obj
+         Debug\Triangle.obj
+         LINK : C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.exe not found or not built by the last incremental link; performing full link
+         shape.vcxproj -> C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.exe;#1" /manifest Debug\shape.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\shape.unsuccessfulbuild".
+         Touching "Debug\shape.lastbuildstate".
+     1>Done Building Project "C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\shape\shape.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.83
+Time Elapsed 00:00:01.52
