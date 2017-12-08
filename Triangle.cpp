@@ -21,6 +21,33 @@ Triangle::~Triangle(void)
 }
 
 
+//-------getrs           _getA and _getC is inheritance from Polygon
+
+Point Triangle::getB()const
+{
+	return this->B;
+}
+
+//-------setrs
+
+Triangle& Triangle::setA(const Point & p)
+{
+	this->A=p;
+	return (*this);
+}
+
+Triangle& Triangle::setB(const Point & p)
+{
+	this->B=p;
+	return (*this);
+}
+
+Triangle& Triangle::setC(const Point & p)
+{
+	this->C=p;
+	return (*this);
+}
+
 
 //---fontcion of Triangle
 

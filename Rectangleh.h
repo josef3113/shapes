@@ -3,7 +3,6 @@
 
 class Rectangle :public Polygon
 {
-	private:
 		
 
 public:

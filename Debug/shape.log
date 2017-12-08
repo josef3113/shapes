@@ -1,13 +1,16 @@
-﻿Build started 12/8/2017 10:32:56 AM.
+﻿Build started 12/8/2017 12:39:12 PM.
      1>Project "C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\shape\shape.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\shape.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Rectangleh.cpp main.cpp
-         Rectangleh.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Rectangleh.cpp Triangle.cpp main.cpp
+         Triangle.cpp
+         Generating Code...
+         Compiling...
+         main.cpp
          Generating Code...
          Skipping... (no relevant changes detected)
-         main.cpp
+         Rectangleh.cpp
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\shape.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\josef\Documents\Visual Studio 2010\Projects\gg\shape\Debug\shape.lib" /MACHINE:X86 Debug\Circle.obj
          Debug\main.obj
@@ -25,4 +28,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.94
+Time Elapsed 00:00:02.08
