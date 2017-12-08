@@ -4,8 +4,7 @@
 class Rectangle :public Polygon
 {
 	private:
-		int lenght;
-		int width;
+		
 
 public:
 
@@ -14,11 +13,15 @@ public:
 	~Rectangle();
 
 	//----setres
+
 	Rectangle& setA(const Point&);
     Rectangle& setC(const Point&);
-	//-----getrs
-	Point getA()const;
-	Point getC()const;
+
+	//-----getrs  inheritance from polygon
+
+
+	//-----its considered attribute
+
 	int getLenght()const;
 	int getWidth()const;
 

@@ -4,19 +4,31 @@
 class Point
 {
 private:
-       int x, y;
+	int x, y;
 
 public:
-		Point(int x=0, int y=0);
-		int getX() const;
-		int getY() const;
-		void setX(int x);
-		void setY(int y);
 
-friend ostream& operator <<(ostream &out,const Point & toprint);
+	Point(int x=0, int y=0);   //defult constractor
+	~Point();
+
+	//-----getrs
+
+	int getX() const;
+	int getY() const;
+
+	//-----setrs
+
+	void setX(int x);
+	void setY(int y);
+	
+	//friend function
+
+	friend ostream& operator <<(ostream &out,const Point & toprint);
 
 };
 
-double distancePoint(Point A ,Point B);
+//-----succor function
+
+double distancePoint(Point A ,Point B);    //escort function to get distance between two points
 
 #endif

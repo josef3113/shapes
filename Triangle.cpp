@@ -9,13 +9,9 @@ Triangle::Triangle(Point A,Point B,Point C)
 	this->B=B;
 	this->C=C;
 
-	this->AB=distancePoint(A,B);
-	this->BC=distancePoint(B,C);
-	this->CA=distancePoint(C,A);
-
 	cout<<"Tri co"<<endl;      //to follow after creation objeckt
 
-	
+
 }
 
 
@@ -30,11 +26,40 @@ Triangle::~Triangle(void)
 
 double Triangle::getArea()const
 {
-	 return	 sqrt( (AB+BC+CA)*(AB+BC-CA)*(AB-BC+CA)*(BC+CA-AB)  ) / 4;
+	double AB=this->getAB();     // size of edge AB
+	double BC=this->getBC();     // size of edge BC
+	double CA=this->getCA();     // size of edge CA
+
+
+	return	 sqrt( (AB+BC+CA)*(AB+BC-CA)*(AB-BC+CA)*(BC+CA-AB)  ) / 4;
 }
 
 double Triangle::getPerimeter()const
 {
+
+	double AB=this->getAB();     // size of edge AB
+	double BC=this->getBC();     // size of edge BC
+	double CA=this->getCA();     // size of edge CA
+
 	return AB+BC+CA;
 }
 
+//-------- considered attribute
+
+double Triangle::getAB()const
+{
+	return distancePoint(A,B);
+
+}
+
+double Triangle::getBC()const
+{
+	return distancePoint(B,C);
+
+}
+
+double Triangle::getCA()const
+{
+	return distancePoint(C,A);
+
+}

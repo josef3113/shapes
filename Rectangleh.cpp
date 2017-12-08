@@ -5,8 +5,7 @@ Rectangle::Rectangle(Point A,Point C )
 {
 	this->A=A;                          // A from inheritance of Polygon
 	this->C=C;                          // C from inheritance of Polygon
-	this->lenght=abs(C.getX()-A.getX());
-	this->width=abs(C.getY()-A.getY());
+	
 	cout<<"Rec c"<<endl;
 
 }
@@ -26,34 +25,26 @@ Rectangle& Rectangle::setA(const Point & p)
 	return (*this);
 }
 
-Rectangle& Rectangle::setC(const Point & p)    //to add the effect from this action
+Rectangle& Rectangle::setC(const Point & p)    
 {
 	this->C=p;
 	return (*this);
 }
 
-//not exist set to lenght and width because they dependent in point A and point C
 
-//-----getrs
 
-Point Rectangle::getA()const
-{
-	return this->A;
-}
 
-Point Rectangle::getC()const
-{
-	return this->C;
-}
+//-------- its considered attributes 
 
 int Rectangle::getLenght()const
 {
-	return this->lenght;
+	return abs( C.getX()-A.getX() );
 }
+
 
 int Rectangle::getWidth()const
 {
-	return this->width;
+	return abs( C.getY()-A.getY() );
 }
 
 
@@ -62,10 +53,10 @@ int Rectangle::getWidth()const
 
 double Rectangle:: getArea()const
 {
-	return (this->lenght) * (this->width);
+	return ( ( this->getLenght() ) *  ( this->getWidth() ) );
 }
 
 double Rectangle::getPerimeter()const
 {
-	return 2*( this->lenght  +  this->width);
+	return 2*( ( this->getLenght() )  +  ( this->getWidth() ) );
 }

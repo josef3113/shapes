@@ -1,7 +1,7 @@
 #include "Circle.h"
 #include "Shape.h"
 
-# define  PHI 3.1415
+
 
 Circle::Circle(Point p,int r)
 {
@@ -14,7 +14,7 @@ Circle::Circle(Point p,int r)
 		{
 			this->radius=r;
 		}
-	this->point=p;
+	this->Center=p;
 
 	cout <<"c co"<<endl;
 }
@@ -27,9 +27,9 @@ Circle::~Circle(void)
 
 //-----setres
 
-Circle& Circle::setPoint(const Point & p)
+Circle& Circle::setCenter(const Point & p)
 {
-	this->point=p;
+	this->Center=p;
 	return (*this);
 }
 
@@ -42,9 +42,9 @@ Circle& Circle::setRadius(const int & r)
 
 //------grters 
 
-Point Circle::getPoint()const
+Point Circle::getCenter()const
 {
-	return this->point;
+	return this->Center;
 }
 
 int Circle::getRadius()const

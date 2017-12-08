@@ -14,6 +14,9 @@ public:
 	Polygon(){};
 	~Polygon(){};
 
+	Point getA()const{return A;}
+	Point getC()const{return C;}
+
 
 
 
