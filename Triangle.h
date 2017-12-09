@@ -26,10 +26,7 @@ public:
 	double getArea()const;
 	double getPerimeter()const;
 
-	//------ considered attribute
-	double getAB()const;
-	double getBC()const;
-	double getCA()const;
+	
 };
 
 //  escort function 

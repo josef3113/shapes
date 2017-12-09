@@ -53,9 +53,9 @@ Triangle& Triangle::setC(const Point & p)
 
 double Triangle::getArea()const
 {
-	double AB=this->getAB();     // size of edge AB
-	double BC=this->getBC();     // size of edge BC
-	double CA=this->getCA();     // size of edge CA
+	double AB=this->getedge(this->A,this->B);     // size of edge AB
+	double BC=this->getedge(this->B,this->C);     // size of edge BC
+	double CA=this->getedge(this->C,this->A);    // size of edge CA
 
 
 	return	 sqrt( (AB+BC+CA)*(AB+BC-CA)*(AB-BC+CA)*(BC+CA-AB)  ) / 4;
@@ -64,29 +64,11 @@ double Triangle::getArea()const
 double Triangle::getPerimeter()const
 {
 
-	double AB=this->getAB();     // size of edge AB
-	double BC=this->getBC();     // size of edge BC
-	double CA=this->getCA();     // size of edge CA
+	double AB=this->getedge(this->A,this->B);     // size of edge AB
+	double BC=this->getedge(this->B,this->C);     // size of edge BC
+	double CA=this->getedge(this->C,this->A);    // size of edge CA
 
 	return AB+BC+CA;
 }
 
-//-------- considered attribute
 
-double Triangle::getAB()const
-{
-	return distancePoint(A,B);
-
-}
-
-double Triangle::getBC()const
-{
-	return distancePoint(B,C);
-
-}
-
-double Triangle::getCA()const
-{
-	return distancePoint(C,A);
-
-}
