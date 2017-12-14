@@ -53,20 +53,20 @@ Triangle& Triangle::setC(const Point & p)
 
 double Triangle::getArea()const
 {
-	double AB=this->getedge(this->A,this->B);     // size of edge AB
-	double BC=this->getedge(this->B,this->C);     // size of edge BC
-	double CA=this->getedge(this->C,this->A);    // size of edge CA
+	double AB=this->getEdge(this->A,this->B);     // size of edge AB
+	double BC=this->getEdge(this->B,this->C);     // size of edge BC
+	double CA=this->getEdge(this->C,this->A);    // size of edge CA
 
 
-	return	 sqrt( (AB+BC+CA)*(AB+BC-CA)*(AB-BC+CA)*(BC+CA-AB)  ) / 4;
+	return	 sqrt( (AB+BC+CA)*(AB+BC-CA)*(AB-BC+CA)*(BC+CA-AB)  ) *0.25;
 }
 
 double Triangle::getPerimeter()const
 {
 
-	double AB=this->getedge(this->A,this->B);     // size of edge AB
-	double BC=this->getedge(this->B,this->C);     // size of edge BC
-	double CA=this->getedge(this->C,this->A);    // size of edge CA
+	double AB=this->getEdge(this->A,this->B);     // size of edge AB
+	double BC=this->getEdge(this->B,this->C);     // size of edge BC
+	double CA=this->getEdge(this->C,this->A);    // size of edge CA
 
 	return AB+BC+CA;
 }

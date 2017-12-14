@@ -14,7 +14,7 @@ public:
 	Polygon(){};
 	~Polygon(){};
 
-	double getedge(const Point &A,const Point &B)const {return distancePoint(A,B);}
+	double getEdge(const Point &A,const Point &B)const {return A.getDistance(B);}
 	Point getA()const{return A;}
 	Point getC()const{return C;}
 

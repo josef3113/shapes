@@ -3,7 +3,7 @@
 
 
 
-Circle::Circle(Point p,int r)
+Circle::Circle(Point center,int r)
 {
 	if(r<=0)
 		{
@@ -14,7 +14,7 @@ Circle::Circle(Point p,int r)
 		{
 			this->radius=r;
 		}
-	this->Center=p;
+	this->Center=center;
 
 	cout <<"c co"<<endl;
 }

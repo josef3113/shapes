@@ -14,7 +14,7 @@ private:
 public:
 	
 
-	Circle(Point point=(0,0),int r=0);  //difult constractor
+	Circle(Point center=(0,0),int r=0);  //difult constractor
 	~Circle();
 
 	//---setres

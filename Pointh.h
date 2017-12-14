@@ -21,14 +21,16 @@ public:
 	void setX(int x);
 	void setY(int y);
 	
+	//function of Point 
+	double getDistance(const Point &B)const;
+	
+	
 	//friend function
 
 	friend ostream& operator <<(ostream &out,const Point & toprint);
 
 };
 
-//-----succor function
 
-double distancePoint(Point A ,Point B);    //escort function to get distance between two points
 
 #endif

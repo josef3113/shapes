@@ -53,11 +53,11 @@ ostream& operator <<(ostream &out,const Point& toprint)
 //-----succor function
 
 
-double distancePoint(Point A ,Point B)
+double Point::getDistance(const Point & B)const
 {
 
-	double s=A.getX()-B.getX();     //  (X1-X2)
-	double p=A.getY()-B.getY();     //  (Y1-Y2)
+	double s=this->getX()-B.getX();     //  (X1-X2)
+	double p=this->getY()-B.getY();     //  (Y1-Y2)
 
 
 
