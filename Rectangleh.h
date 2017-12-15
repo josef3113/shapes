@@ -9,6 +9,7 @@ public:
 
 
 	Rectangle( Point=(0,0) , Point=(0,0) ); //defult constractor
+	Rectangle(const Rectangle&);            //copy constractor
 	~Rectangle();
 
 	//----setres
@@ -23,6 +24,9 @@ public:
 
 	int getLenght()const;
 	int getWidth()const;
+
+	//------operators
+	Rectangle& operator=(const Rectangle &);
 
 	//----function of Rectangle
      

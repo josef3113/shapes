@@ -15,6 +15,7 @@ public:
 	
 
 	Circle(Point center=(0,0),int r=0);  //difult constractor
+	Circle(const Circle&);               //copy constractor
 	~Circle();
 
 	//---setres
@@ -25,6 +26,9 @@ public:
 
 	Point getCenter()const;
 	int getRadius()const;
+
+	//-------operators
+	Circle& operator =(const Circle&);
 
 	//----function of Circle
 	double getArea()const;

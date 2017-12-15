@@ -19,6 +19,10 @@ Circle::Circle(Point center,int r)
 	cout <<"c co"<<endl;
 }
 
+Circle::Circle(const Circle & other)
+{
+	(*this)=other;  //because no have pointer its ok to use in operator =
+}
 
 Circle::~Circle(void)
 {
@@ -50,6 +54,16 @@ Point Circle::getCenter()const
 int Circle::getRadius()const
 {
 	return this->radius;
+}
+
+//--------operators
+
+Circle& Circle:: operator =(const Circle & other)
+{
+	this->radius=other.radius;
+	this->Center=other.Center;
+
+	return (*this);
 }
 
 //----function of Circle 

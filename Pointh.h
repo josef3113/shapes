@@ -9,6 +9,7 @@ private:
 public:
 
 	Point(int x=0, int y=0);   //defult constractor
+	Point(const Point&);       //copy constractor
 	~Point();
 
 	//-----getrs
@@ -18,12 +19,15 @@ public:
 
 	//-----setrs
 
-	void setX(int x);
-	void setY(int y);
+	Point& setX(int x);
+	Point& setY(int y);
 	
 	//function of Point 
 	double getDistance(const Point &B)const;
 	
+	//-----operator
+
+	Point& operator =(const Point& other);
 	
 	//friend function
 

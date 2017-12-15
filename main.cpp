@@ -42,13 +42,23 @@ void main()
 	Point o(0, 0);
 	Point a(0, 1);
 	Point b(1, 0);
+	Point c=a;
 	Shape *shapes[] = {
-		new Rectangle(a, b),
-		new Triangle(o, a, b),
+		new Rectangle(c, b),
+		new Triangle(o, c, b),
 		new Circle(o, 1) };
 		for (int i = 0; i < 3; ++i)
 			cout << i << ") area=" << shapes[i]->getArea() <<
 			" perim=" << shapes[i]->getPerimeter() << endl;
+
+		Circle c1(a,3);
+		Circle c2=c1;
+
+		Rectangle r1(a,o);
+		Rectangle r2=r1;
+
+		Triangle t1(a,o,b);
+		Triangle t2=t1;
 		for (int i = 0; i < 3; ++i)
 			delete shapes[i];
 

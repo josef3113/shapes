@@ -10,6 +10,11 @@ Rectangle::Rectangle(Point A,Point C )
 
 }
 
+Rectangle::Rectangle(const Rectangle& other)
+{
+  (*this)=other;    //because no have pointers it ok to use in operator =
+
+}
 
 Rectangle::~Rectangle(void)
 {
@@ -47,6 +52,15 @@ int Rectangle::getWidth()const
 	return abs( C.getY()-A.getY() );
 }
 
+//-----operators
+
+Rectangle& Rectangle::operator=(const Rectangle& other)
+{
+	this->A=other.A;
+	this->C=other.C;
+	
+	return (*this);
+}
 
 
 //-----function of Rectangle

@@ -14,6 +14,11 @@ Triangle::Triangle(Point A,Point B,Point C)
 
 }
 
+Triangle::Triangle(const Triangle& other)
+{
+	(*this)=other;
+}
+
 
 Triangle::~Triangle(void)
 {
@@ -48,6 +53,16 @@ Triangle& Triangle::setC(const Point & p)
 	return (*this);
 }
 
+//-------operators
+
+Triangle& Triangle::operator=(const Triangle & other)
+{
+	this->A=other.A;
+	this->B=other.B;
+	this->C=other.C;
+
+	return (*this);
+}
 
 //---fontcion of Triangle
 

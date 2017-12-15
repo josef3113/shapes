@@ -8,6 +8,8 @@ class Triangle :public Polygon
 public:
 
 	Triangle( Point=(0,0),Point=(0,0),Point=(0,0) ); //defult constractor
+	Triangle(const Triangle&);                       //copy constractor
+
 	~Triangle();
 
 	//----getrs            _getA and _getC is inheritance from Polygon
@@ -20,6 +22,8 @@ public:
 	Triangle& setB(const Point&);
 	Triangle& setC(const Point&);
 
+	//----operators
+	Triangle& operator =(const Triangle &);
 
 	//------function of Triangle
 
@@ -28,8 +32,4 @@ public:
 
 	
 };
-
-//  escort function 
-
-//double distancePoint(Point ,Point);
 
