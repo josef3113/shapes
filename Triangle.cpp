@@ -9,7 +9,6 @@ Triangle::Triangle(Point A,Point B,Point C)
 	this->B=B;
 	this->C=C;
 
-	cout<<"Tri co"<<endl;      //to follow after creation objeckt
 
 
 }
@@ -22,7 +21,7 @@ Triangle::Triangle(const Triangle& other)
 
 Triangle::~Triangle(void)
 {
-	cout<<"Tri dis"<<endl;   //to follow after destruction  objeckt
+	
 }
 
 

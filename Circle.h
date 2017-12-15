@@ -1,4 +1,7 @@
-#pragma once
+#ifndef CIRCLE_H
+#define CIRCLE_H
+
+
 #include "Shape.h"
 #include "Pointh.h"
 
@@ -37,3 +40,4 @@ public:
 
 };
 
+#endif

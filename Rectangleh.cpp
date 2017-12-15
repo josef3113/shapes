@@ -6,7 +6,7 @@ Rectangle::Rectangle(Point A,Point C )
 	this->A=A;                          // A from inheritance of Polygon
 	this->C=C;                          // C from inheritance of Polygon
 	
-	cout<<"Rec c"<<endl;
+	
 
 }
 
@@ -18,7 +18,6 @@ Rectangle::Rectangle(const Rectangle& other)
 
 Rectangle::~Rectangle(void)
 {
-	cout<<"Rec dis"<<endl;
 }
 
 

@@ -16,7 +16,6 @@ Circle::Circle(Point center,int r)
 		}
 	this->Center=center;
 
-	cout <<"c co"<<endl;
 }
 
 Circle::Circle(const Circle & other)
@@ -26,7 +25,6 @@ Circle::Circle(const Circle & other)
 
 Circle::~Circle(void)
 {
-	cout<< "c dis"<<endl;
 }
 
 //-----setres
